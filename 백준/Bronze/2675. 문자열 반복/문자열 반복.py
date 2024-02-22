@@ -1,10 +1,7 @@
-num = int(input())
+n = int(input())
 
-for i in range(num):
-    repeat, word = input().split()
-    repeat = int(repeat)
-    for k in word:
-        for j in range(repeat):
-            print(k, end='')
-    print()
-
+for _ in range(n):
+    cnt, word = input().split()
+    for x in word:
+        print(x*int(cnt), end='')  # end='' 옆으로 붙임
+    print()  # 줄넘김
